@@ -1,0 +1,41 @@
+import React, { useState } from 'react'
+import './App.css'
+
+// Paste your component code here
+
+function App() {
+  return (
+    <CustomerJourneyMap
+      heading="Motorsport Customer Journey Map"
+      subheading="Discover how different personas engage with our motorsport brand"
+      personas={[
+        {
+          id: "fan",
+          emoji: "🏁",
+          title: "Racing Fan",
+          description: "Passionate motorsport enthusiast",
+          journey: [
+            {
+              title: "Discover",
+              description: "Initial awareness...",
+              stats: [
+                { icon: "📊", label: "Engagement", value: "85%" },
+                { icon: "⏱️", label: "Time Spent", value: "12min" },
+                { icon: "🎯", label: "Conversion", value: "23%" }
+              ]
+            }
+            // ... rest of journey stages
+          ]
+        }
+        // ... other personas
+      ]}
+      backgroundColor="#F8F9FA"
+      textColor="#000000"
+      accentColor="#FF3B30"
+    />
+  )
+}
+
+export default App
+
+
